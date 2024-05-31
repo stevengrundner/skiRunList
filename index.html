@@ -6,60 +6,103 @@
     <title>skiRunList</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body class ="container"> <!-- this is the box that i'm putting the dates and create box-->
 
+<br>
+ <H1 align = "center" >My Favorite Ski Resort</H1>
+
+
+
+<body class ="container"> <!-- this is the box that i'm putting the dates and create box-->
+    
+</body>
     <br> <!-- creating the break line so that there is a space below the box and calendar-->
 
     <div class="card">
         <div class="card-body">
+            
             <div class="row">
                 <!-- the above code sets up the inside of the container-->
                 
+                
+                
+                <!-- area name & area opening date within -->
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-opening-date">Ski Run Opening Date</label>
+                        <label for="new-area">Area Name</label>
+                        <input type="text" class="form-control" id="new-area">
+                    </div>
+                    </div>
+                
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-opening-date">Area Opening Date</label>
                         <input type="date" class="form-control" id="new-opening-date">
                     </div>
                 </div>
                 <!-- the code above shows the start date-->
 
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-ski-date">Planned Ski Date</label>
-                        <input type="date" class="form-control" id="new-ski-date">
-                    </div>
-                </div>
+
+
+
+                
+
+                
             </div>
                 <!-- the code above shows the end date-->
 
-                <br> <!-- creates a space below the dates to make it look nicer-->
+                
+           
+           <!--NEW-->
             <div class="row">
-                <div class="col-sm">
+
+
+                <!-- ski run name & ski run opening date within -->
+               
+                </div>
+                        <!--NEW-->
+
+           
+           
+                <div class="row">
+                    <div class="col-sm">
                     <div class="form-group">
                         <label for="new-ski-run">Ski Run Name</label>
                         <input type="text" class="form-control" id="new-ski-run">
                     </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-ski-date">Run Opening Date</label>
+                            <input type="date" class="form-control" id="new-ski-date">
+                        </div>
+                    </div>
                 </div>
-            </div>
                 <!-- the code above creates the task box utilizing bootstrap-->
 
+
                 
-            <br> <!-- creating a space below the ski run list to the create box-->
-            <div>
-                <button id="add" class="btn btn-primary form-control"> Create</button>
+
+
+                <br> <!-- creating a space below the ski run list to the create box-->
+                <div>
+                <button id="add" class="btn btn-primary form-control"> Add</button>
             </div>
+
+
         </div>
     </div>
 
 
 
     <br> <!-- this break line makes the logged list look nicer showing the bottom of the container-->
-    <table id="list" class="table table-dark table-striped">
+    <table id="list" class="table table-light table-striped">
         <tr>
+            <th>Area Name</th>
+            <th>Area Opening Date</th>
             <th>Run Name</th>
-            <th>Date Created</th>
-            <th>Ski Run Opening Date</th>
-            <th>Planned Ski Date</th>
+
+            <th>Run Opening Date</th>
             <th>Actions</th>
         </tr>
         <!-- the code above shows the logging information of the tasks-->
