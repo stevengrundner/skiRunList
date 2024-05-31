@@ -1,118 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skiRunList</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
 
-<br>
- <H1 align = "center" >My Favorite Ski Resort</H1>
+  <br />
 
+  <h2 align="center">Ski Run List</h2>
 
-
-<body class ="container"> <!-- this is the box that i'm putting the dates and create box-->
-    
-</body>
-    <br> <!-- creating the break line so that there is a space below the box and calendar-->
+  <body>
+    <br />
+    <!-- creating the break line so that there is a space below the box and calendar-->
 
     <div class="card">
-        <div class="card-body">
-            
-            <div class="row">
-                <!-- the above code sets up the inside of the container-->
-                
-                
-                
-                <!-- area name & area opening date within -->
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-area">Area Name</label>
-                        <input type="text" class="form-control" id="new-area">
-                    </div>
-                    </div>
-                
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-opening-date">Area Opening Date</label>
-                        <input type="date" class="form-control" id="new-opening-date">
-                    </div>
-                </div>
-                <!-- the code above shows the start date-->
+      <div class="card-body">
+        <div class="row">
+          <!-- the above code sets up the inside of the container where my inputted information goes-->
 
-
-
-
-                
-
-                
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-area">Area Name</label>
+              <input type="text" class="form-control" id="new-area" />
             </div>
-                <!-- the code above shows the end date-->
-
-                
-           
-           <!--NEW-->
-            <div class="row">
-
-
-                <!-- ski run name & ski run opening date within -->
-               
-                </div>
-                        <!--NEW-->
-
-           
-           
-                <div class="row">
-                    <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-ski-run">Ski Run Name</label>
-                        <input type="text" class="form-control" id="new-ski-run">
-                    </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="form-group">
-                            <label for="new-ski-date">Run Opening Date</label>
-                            <input type="date" class="form-control" id="new-ski-date">
-                        </div>
-                    </div>
-                </div>
-                <!-- the code above creates the task box utilizing bootstrap-->
-
-
-                
-
-
-                <br> <!-- creating a space below the ski run list to the create box-->
-                <div>
-                <button id="add" class="btn btn-primary form-control"> Add</button>
+          </div>
+          <!-- the above code creates the box where i can input the name of the area that is open
+          -->
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-opening-date">Area Opening Date</label>
+              <input type="date" class="form-control" id="new-opening-date" />
             </div>
-
-
+          </div>
+          <!-- the above code shows the date that the area of the mountain opens up-->
         </div>
+        <!-- this div closes out the line inside the container that the area name and area open date is listed on-->
+
+        <div class="row">
+          <!-- this is creating a second row where ski run name and run opening date are inputted-->
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-ski-run">Ski Run Name</label>
+              <input type="text" class="form-control" id="new-ski-run" />
+            </div>
+          </div>
+          <!-- the above code is the box where the ski run name is inputted-->
+
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-ski-date">Run Opening Date</label>
+              <input type="date" class="form-control" id="new-ski-date" />
+            </div>
+          </div>
+        </div>
+        <!-- the above code creates the task box-->
+
+        <br />
+        <!-- creating a space below the ski run list to the create box-->
+
+        <div>
+          <button id="add" class="btn btn-primary form-control">Add</button>
+          <!-- the button to "add" the information-->
+        </div>
+      </div>
     </div>
+    <!-- the above div closes out the information within the container-->
 
+    <br />
+    <!-- this break line makes the logged list look nicer showing the bottom of the container-->
 
-
-    <br> <!-- this break line makes the logged list look nicer showing the bottom of the container-->
     <table id="list" class="table table-light table-striped">
-        <tr>
-            <th>Area Name</th>
-            <th>Area Opening Date</th>
-            <th>Run Name</th>
-
-            <th>Run Opening Date</th>
-            <th>Actions</th>
-        </tr>
-        <!-- the code above shows the logging information of the tasks-->
+      <tr>
+        <th>Area Name</th>
+        <th>Area Opening Date</th>
+        <th>Run Name</th>
+        <th>Run Opening Date</th>
+        <th>Actions</th>
+      </tr>
+      <!-- the above code shows the logged information of the tasks that are entered from the boxes within the container-->
     </table>
-
-
-
 
     <script src="index.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>
